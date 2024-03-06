@@ -33,6 +33,7 @@
         <van-button type="default"> 取消 </van-button>
         <van-button type="primary" :disabled="!canSubmit" @click="handleConfirm"> 确认 </van-button>
       </div>
+      <father></father>
     </div>
 </template>
   
@@ -43,6 +44,7 @@ import { FEEDBACK_MODULE } from '../../constant/workflow';
 import { showLoadingToast, showToast } from 'vant';
 import { ref, computed } from 'vue'
 import { getGoodsList } from '@/request/getData'
+import Father from '@/components/Father.vue'
 
 interface IFileList {
   pictureName?: string;
