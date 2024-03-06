@@ -1,0 +1,64 @@
+:root:root {
+    --van-blue: #0b41cd;
+   //cell
+  --van-cell-border-color: rgba(0, 0, 0, 0.1);
+  --van-cell-vertical-padding: 12px;
+  --van-cell-horizontal-padding: 4px;
+  --van-cell-group-inset-padding: 0;
+}
+.van-button--normal {
+    border-radius: 32px;
+    height: 32px;
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  .van-button--default {
+    border-color: #0B41CD;
+    color: #0B41CD;
+    box-shadow: 0 0 10px 0 rgba(11, 65, 205, 0.15);
+  }
+
+  // field
+.van-field {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--van-cell-border-color);
+  .van-icon-arrow:before {
+    content: url('../../img/common/icon-field-arrow.svg');
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}
+
+//NavBar
+.van-nav-bar {
+  position: sticky;
+  top: 0;
+  .van-nav-bar__content {
+    height: 44px;
+  }
+  .van-nav-bar__title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .van-nav-bar__right {
+    padding-left: 0;
+    padding-right: 16px;
+  }
+  .van-nav-bar__right {
+    padding-left: 16px;
+  }
+  &:after {
+    border: 0;
+  }
+}
+
+// picker
+.van-picker-column__wrapper {
+  display: block;
+}
