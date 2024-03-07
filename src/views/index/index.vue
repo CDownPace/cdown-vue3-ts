@@ -74,6 +74,7 @@ const showModulePicker = ref(false)
 const fileList: any = ref();
 
 const onUpload = async (file: any) => {
+  console.log('change 6')
   const loading = showLoadingToast({
     message: '上传中...',
     forbidClick: true,
