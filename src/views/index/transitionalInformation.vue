@@ -19,6 +19,7 @@ const changeKey = () => {
     refData.value = 'oo'
 };
 provide('changeKey', changeKey)
+console.log('change5')
 
 </script>
     
