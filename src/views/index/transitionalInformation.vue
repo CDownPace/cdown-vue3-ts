@@ -4,6 +4,9 @@
         <div class="attachment">
             <div class="feed-back-title" @click="changeKey">改变</div>
         </div>
+        <div>
+            <img :src="url" v-get-image="url" alt="">
+        </div>
         <father></father>
     </div>
 </template>
@@ -13,6 +16,7 @@ import Father from '@/components/Father.vue'
 import { provide,ref } from 'vue';
 const data = 'kk'
 const refData = ref('ff')
+const url = ref('https://img.jbzj.com/images/xgimg/bcimg0.png')
 provide('key', data)
 provide('refKey', refData)
 const changeKey = () => {

@@ -6,6 +6,7 @@ import 'vant/lib/index.css';
 import App from './App.vue'
 import './assets/css/common/global.scss'
 import NavBar from './components/NavBar.vue'
+import getImage from './tool/getImage.ts'
 
 
 const pinia = createPinia()
@@ -15,4 +16,5 @@ createApp(App)
     .use(router)
     .use(vant)
     .use(pinia)
+    .directive('getImage',getImage)
     .mount('#app')
