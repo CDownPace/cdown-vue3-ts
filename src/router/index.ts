@@ -17,6 +17,14 @@ const routes: Array<RouteRecordRaw> = [
             title: '首页'
         },
         component: () => import("../views/index/transitionalInformation.vue"),
+    },
+    {
+        path:"/dispatch",
+        name:'dispatcherPage',
+        meta: {
+            title: '派发器'
+        },
+        component: () => import("../views/index/dispatcherPage.vue"),
     }
 ];
 const router = createRouter({
